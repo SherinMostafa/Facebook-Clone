@@ -42,6 +42,13 @@ function signInFormValidate() {
         error.innerHTML = text;
         return false;
     }
+
+    else if (passwordSignIn.length < 8) {
+        // Error
+        text = "Your Password Must Exceed 7 Characters";
+        error.innerHTML = text;
+        return false;
+    }
     
     else {
         return true;
@@ -97,6 +104,13 @@ function signUpFormValidate() {
     else if (passwordSignUp === '') {
         // Error
         text = "Please Enter Password";
+        error.innerHTML = text;
+        return false;
+    }
+
+    else if (passwordSignUp.length < 8) {
+        // Error
+        text = "Your Password Must Exceed 7 Characters";
         error.innerHTML = text;
         return false;
     }

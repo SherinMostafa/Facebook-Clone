@@ -1,602 +1,414 @@
 body {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f0f2f5;
 }
 
-a {
-    text-decoration: none;
-}
-
-/* NavBar */
-
-nav {
+main {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
-    /* width: 100%; */
-    height: 56px;
-    padding: 0px 13px 0px 13px; /*Edit - padding: 8px 13px 0px 13px;*/
-
-    background-color: white;
-    box-shadow: 0px 1px 3px #ccc;
-
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
-
-/* Left Side */
-
-nav .Left_Nav {
-    display: flex;
-}
-
-nav .Left_Nav .fa-facebook {
-    color: #1877f2;
-    font-size: 40px;
-}
-
-nav .Left_Nav .Search_Box {
-    position: relative;
+    width: 980px;
     
-    margin-left: 5px;
+    margin: 0px auto;
+    padding: 80px 0px 0px;
 }
 
-nav .Left_Nav .Search_Box input {
-    height: 40px;
-    padding: 7px 16px 9px 36px;
+main section img {
+    margin-top: 80px;
+    margin-left: -28px;
+    margin-bottom: -10px;
 
-    font-size: 15px;
-    color: #606770;
-    background-color: #f0f2f5;
+    position: relative;
 
+    height: 106px;
+}
+
+main section h2 {
+    color: #1c1e21;
+    font-size: 28px;
+    font-weight: normal;
+    
+    line-height: 32px;
+
+    margin: 0px 0px 20px;
+
+    width: 500px;
+}
+
+main section .Right {
+    text-align: center;
+
+    margin-top: 40px;
+    padding: 10px 0px 24px;
+    
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.1), 0px 8px 16px rgb(0, 0, 0, 0.1);
+    
     border: none;
-    border-radius: 50px;
-}
-
-nav .Left_Nav .Search_Box input:focus {
-    outline: none;
-}
-
-nav .Left_Nav .Search_Box .fa-search {
-    position: absolute;
-    top: 12px;
-    left: 15px;
-
-    font-size: 15px;
-    color: #606770;
-}
-
-/* Middle Side */
-
-nav .Middle_Nav {
-    display: flex;
-    align-items: flex-end;
-}
-
-nav .Middle_Nav a {
-    margin: 0px 10px;
-    padding: 12px 20px;
-
-    font-size: 25px;
-    color: #65676b;
-
     border-radius: 8px;
 }
 
-nav .Middle_Nav a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-nav .Middle_Nav .Active {
-    color: #1877f2;
-
-    border-radius: 0px;
-    border-bottom: 2px solid #1877f2;
-}
-
-nav .Middle_Nav .Active:hover {
-    background-color: white;
-}
-
-/* Right Side */
-
-nav .Right_Nav {
-    display: flex;
-    align-items: center;
-}
-
-nav .Right_Nav .Profile {
-    display: flex;
-    align-items: center;
-
-    margin-right: 5px;
-    padding: 2px 10px 2px 2px;
-}
-
-nav .Right_Nav .Profile img {
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-}
-
-nav .Right_Nav .Profile span {
-    margin-left: 5px;
-
-    font-size: 15px;
-    font-weight: bold;
-    color: #050505;
-}
-
-nav .Right_Nav a {
-    margin: 5px;
-
-    width: 40px;
-    height: 40px;
-
-    font-size: 18px;
-    color: #050505;
-    background-color: #e4e6eb;
+main section .Right form {
+    width: 396px;
     
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Section */
-
-section {
-    background-color: #f0f2f5;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Left Side */
-
-section .Left_Section {
-    background-color: #f0f2f5;
-    
-    height: 100vh;
-    width: 300px;
-
-    position: sticky;
-    left: 0;
-    top: 56px;
-
-    overflow: hidden;
-}
-
-section .Left_Section:hover {
-    overflow-y: scroll;
-}
-
-section .Left_Section div {
     display: flex;
     align-items: center;
-
-    padding: 10px;
-}
-
-section .Left_Section div img {
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%;
-}
-
-section .Left_Section div span {
-    margin-left: 3px;
-
-    font-size: 15px;
-    font-weight: bold;
-    color: #050505;
-}
-
-/* Middle Side */
-
-section .Middle_Section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 700px;
-    padding: 0px 70px;
-}
-
-section .Middle_Section .First_Section {
-    display: flex;
-
-    width: 100%;
-    margin-top: 20px;
-}
-
-section .Middle_Section .First_Section .Main {
-    width: 135px;
-    height: 200px;
-
-    background-color: white;
-
-    position: relative;
-    overflow: hidden;
-
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px #ddd;
-}
-
-section .Middle_Section .First_Section .Main i {
-    color: white;
-    font-size: 20px;
-
-    background-color: #1877f2;
-
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    padding: 8px;
-
-    border-radius: 50%;
-    border: 4px solid white;
-}
-
-section .Middle_Section .First_Section .Main h3 {
-    font-size: 13px;
-
-    text-align: center;
-    margin-top: 20px;
-}
-
-section .Middle_Section .First_Section .Main img {
-    position: relative;
-
-    width: 100%;
-    height: 140px;
-
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-section .Middle_Section .First_Section .Other {
-    width: 125px;
-    height: 200px;
-
-    background-color: white;
-
-    position: relative;
-    overflow: hidden;
-    
-    margin-left: 7px;
-
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px #ddd;
-}
-
-section .Middle_Section .First_Section .Other a img {
-    position:absolute;
-    top: 11px;
-    left: 16px;
-
-    z-index: 2;
-
-    width:32px;
-    height:32px;
-
-    border: solid 4px #1877F2;
-    border-radius: 50%;
-}
-
-section .Middle_Section .First_Section .Other img {
-    width: 100%;
-    height: 200px;
-
-    border-radius: 10px;
-}
-
-section .Middle_Section .First_Section .Other h3 {
-    position: absolute;
-    bottom: 0px;
-    left:8px;
-
-    color:white;
-    font-size: 13px;
-    font-weight: bold;
-
-    text-align: center;
-
-    margin-top: 20px;
-}
-
-section .Middle_Section .Second_Section {
-    background:white;
-
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px #ddd;
-
-    margin: 20px 0px;
-    padding-top: 5px;
-
-    width: 100%;
-}
-
-section .Middle_Section .Second_Section .Top_Div {
-    display: flex;
-    justify-content: center;
-
-    padding-top: 10px;
-}
-
-section .Middle_Section .Second_Section .Top_Div a img {
-    width:35px;
-    height:35px;
-
-    border-radius: 50%;
-    
-    margin-right: 10px;
-}
-
-section .Middle_Section .Second_Section .Top_Div input {
-    width: 84%;
-
-    outline: none;
-    border: none;
-    border-radius: 50px;
-
-    background:#f0f2f5;
-    
-    padding:10px;
-}
-
-section .Middle_Section .Second_Section .Top_Div input:hover {
-    background-color: rgba(0, 0, 0,0.1);
-}
-
-section .Middle_Section .Second_Section hr {
-    margin-top: 16px;
-    margin-left: 26px;
-    width:92%;
-    background-color:rgb(190, 189, 189);
-}
-
-section .Middle_Section .Second_Section .Bottom_Div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    margin: 10px 0px;
-}
-
-.fa-video{
-    color: #f3425f;
-}
-
-.fa-images{
-    color: #45bd62;
-}
-
-.fa-laugh{
-    color: #f7b928;
-}
-
-section .Middle_Section .Second_Section .Bottom_Div div {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 5px;
-}
-
-section .Middle_Section .Second_Section .Bottom_Div div:hover {
-    background-color: rgba(0, 0, 0,0.05);
-
-    border-radius: 10px;
-}
-
-section .Middle_Section .Second_Section .Bottom_Div div i {
-    font-size:25px;
-}
-
-section .Middle_Section .Second_Section .Bottom_Div div a {
-    margin:5px 0px 0px 10px;
-
-    color:rgb(94 94 94);
-    text-decoration: none;
-}
-section .Middle_Section .First_Post {
-    background-color: white;
-    
-    width: 100%;
-
-    margin-bottom: 20px;
-    padding:20px 0px 5px 0px;
-    
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px #ddd;
-}
-
-section .Middle_Section .First_Post .Post_Details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0px 20px;
-}
-
-section .Middle_Section .First_Post .Post_Details .Details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-section .Middle_Section .First_Post .Post_Details .Details div {
-    display: flex;
     flex-direction: column;
 }
 
-section .Middle_Section .First_Post .Post_Details .Details img {
-    width: 50px;
-    height: 50px;
-
-    border-radius: 50%;
-    
-    margin-right: 10px;
-}
-
-section .Middle_Section .First_Post .Post_Details .Details div h3 {
+main section .Right form p {
     margin: 0px;
+
+    height: 15px;
     
-    font-size: 18px;
-}
-
-section .Middle_Section .First_Post .Post_Details .Details div p {
-    margin: 5px 0px 0px;
-
-    color: #898e94;
+    color: rgba(255, 0, 0, 0.6);
     font-size: 12px;
 }
 
-section .Middle_Section .First_Post .Post {
-    margin: 20px;
-}
-
-section .Middle_Section .First_Post .Post img {
-    width: 100%;
-    height: 300px;
+main section .Right form input[type=text], input[type=password] {
+    margin: 6px 0px;
+    padding: 14px 16px;
     
-    object-fit: cover;
+    width: 332px;
+    height: 22px;
+
+    background-color: #fff;
+
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+
+    color: #1d2129;
+    font-size: 17px;
 }
 
-section .Middle_Section .First_Post .Reacts {
-    margin: 20px;
-    padding: 20px 50px 0px;
+main section .Right form input::placeholder {
+    color: #90949c
+}
+
+main section .Right form input:focus {
+    outline: none;
+
+    border-color: #1b74e4;
+    box-shadow: 0 0 0 2px #e7f3ff;
     
-    border-top: 1px solid #898e94;
+    caret-color: #1b74e4;
+}
+
+main section .Right form input:focus::placeholder {
+    color: #bec3c9
+}
+
+main section .Right form input[type=submit] {
+    margin: 6px 0px 0px;
+    padding: 0px 16px;
     
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 364px;
+    line-height: 48px;
     
-    color: #898e94;
-    font-size: 16px;    
-}
-
-section .Middle_Section .First_Post .Reacts div {
-    display: flex;
-    align-items: center;
-}
-
-section .Middle_Section .First_Post .Reacts i {
-    color: #898e94;
-    margin-right: 5px;
-}
-
-/* Right Side */
-
-section .Right_Section {
-    background-color: #f0f2f5;
-
-    height: 100vh;
-    width: 240px;
-    padding: 10px 20px 20px;
-
-    position: sticky;
-    Right: 0;
-    top: 56px;
-
-    overflow: hidden;
-}
-
-section .Right_Section:hover {
-    overflow-y: scroll;
-}
-
-section .Right_Section .Sponsored h1 {
-    color: #65676b;
+    background-color: #1877f2;
+    
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    
+    color: #fff;
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: bold;
 
-    margin-top: 10px;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
 }
 
-section .Right_Section .Sponsored div {
+main section .Right form input[type=submit]:hover {
+    background-color: #166fe5;
+    
+    cursor: pointer;
+}
+
+main section .Right a {
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+
+    display: block;
+    padding-top: 16px;
+
+    text-decoration: none;
+}
+
+main section .Right a:hover {
+    text-decoration: underline;
+}
+
+main section .Right hr {
+    margin: 20px 16px;
+
+    border: 0px;
+    border-bottom: 1px solid #dadde1;
+}
+
+main section .Right button {
+    margin-top: 6px;
+    padding: 0px 16px;
+
+    background-color: #42b72a;
+
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+
+    line-height: 48px;
+
+    border: none;
+    border-radius: 6px;
+
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+}
+
+main section .Right button:hover {
+    background-color: #36a420;
+    
+    border-color: #36a420;
+}
+
+main section p {
+    text-align: center;
+
+    margin: 28px 0px 0px;
+
+    color: #1c1e21;
+}
+
+main section p a {
+    text-decoration: none;
+    
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+main section p a:hover {
+    text-decoration: underline;
+}
+
+article {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 432px;
+    border-radius: 8px;
+
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.1), 0px 8px 16px rgb(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+article section {
+    padding: 10px 16px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+article section div h1 {
+    margin: 0px;
+
+    color: #1c1e21;
+    font-size: 32px;
+
+    text-align: left;
+    line-height: 38px;
+}
+
+article section div p {
+    margin: 0px;
+
+    color: #606770;
+    font-size: 15px;
+
+    line-height: 24px;
+}
+
+article section img {
+    width: 24px;
+    height: 24px;
+}
+
+article hr {
+    margin: 0px;
+
+    border: none;
+    border-bottom: 1px solid #dadde1;
+}
+
+article form {
+    padding: 16px;   
+}
+
+article form div {
+    color: rgba(255, 0, 0, 0.6);
+    font-size: 12px;
+    
+    margin-bottom: 12px;
+}
+
+article form .error {
+    height: 15px;
+}
+
+article form input {
+    background-color: #f5f6f7;
+    
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    
+    padding: 11px;
+}
+
+article form input:focus {
+    outline: none;
+}
+
+article form input:focus::placeholder {
+    color: #bec3c9;
+}
+
+article form input::placeholder {
+    color: #90949c;
+}
+
+article form .Name {
+    width: 399px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+article form .Name input {
+    width: 170px;
+
+    font-size: 15px;
+    line-height: 16px;
+}
+
+article form .Account input[type=text], article form .Account input[type=password] {
+    width: 375px;
+    height: 16px;
+
+    margin: 10px 0px 0px;
+    padding: 11px;
+    
+    font-size: 14px;
+    line-height: 16px;
+    
+    background-color: #f5f6f7;
+}
+
+article form .Options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin-top: 15px;
+}
+
+article form .Options label {
+    width: 100%;
+
+    color: #606770;
+    font-size: 12px;
+    font-weight: normal;
+
     display: flex;
     align-items: center;
     
-    margin-top: 20px;
-    padding: 5px 50px 5px 5px;
-
-    color: #050505;
+    padding: 2px 0px 4px;
 }
 
-section .Right_Section .Sponsored img {
-    border-radius: 8px;
-
-    width: 100px;
-    height: 70px;
+article form .Options label i {
+    font-size: 14px;
+    
+    margin-left: 4px;
 }
 
-section .Right_Section .Sponsored h3 {
-    margin-left: 10px;
-
+article form .Options select {
+    color: #1c1e21;
     font-size: 15px;
-    width: 35px;
+    
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    
+    width: 125px;
+    height: 36px;
+
+    padding: 0px 8px;
 }
 
-section .Right_Section .Contacts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 220px;
+article form .Options select:focus {
+    outline: none;
 }
 
-section .Right_Section .Contacts h3 {
-    color: #65676b;
-    font-size: 16px;
-    font-weight: lighter;
-
-    margin-top: 5px;
-}
-
-section .Right_Section .Contacts i {
-    color: #65676b;
-    margin: 0px 5px;
-}
-
-section .Right_Section .Friends div {
+article form .Options div {
     display: flex;
     align-items: center;
 
-    margin-top: 5px;
-    padding: 8px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
 
-    border-radius: 8px;
+    width: 125px;
+    height: 36px;
 }
 
-section .Right_Section .Friends div:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-section .Right_Section .Friends div img {
-    width: 35px;
-    height: 35px;
-
-    border-radius: 50%;
-}
-
-section .Right_Section .Friends div span {
-    margin-left: 10px;
-
+article form .Options div label {
+    color: #1c1e21;
     font-size: 15px;
+    
+    width: 100%;
+    
+    padding-left: 10px;
+}
+
+article form .Options div input {
+    margin-right: 10px;
+}
+
+article form p {
+    color: #777;
+    font-size: 11px;
+
+    text-align: left;
+
+    margin: 11px 0px;
+}
+
+article form p a {
+    color: #385898;
+
+    text-decoration: none;
+}
+
+article form p a:hover {
+    text-decoration: underline;
+}
+
+article form input[type=submit] {
+    width: 194px;
+    height: 36px;
+
+    color: #fff;
+    font-size: 18px;
     font-weight: bold;
-    color: #050505;
+
+    background-color: #00a400;
+
+    border: none;
+    border-radius: 6px;
+
+    margin: 10px 0px;
+    padding: 0px 32px;
 }
